@@ -34,3 +34,6 @@ nav .desktop .primary,
 nav .desktop .secondary{
     display: flex;
 }
+nav .desktop .secondary.mini{
+    display: none;
+}
