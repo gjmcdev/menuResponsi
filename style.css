@@ -38,6 +38,7 @@ nav .mobile{
 nav .mobile .header{  
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 10px;
 }
 nav .mobile .header button{  
@@ -46,6 +47,9 @@ nav .mobile .header button{
    color: white;
    padding: 15px;
    cursor: pointer;
+}
+nav .mobile .collapsed{  
+    display: none;
 }
 nav .logo{
     min-width: 250px;
