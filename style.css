@@ -3,6 +3,12 @@ body{
     padding: 0;
     margin: 0;
 }
+:root{
+    --backgroundColorMenu: black;
+    --colorMenu:white;
+    --backgroundColorMenuHover: rgb(246, 2, 2);
+    --colorMenuHover:rgb(0, 0, 0);
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -28,8 +34,8 @@ body{
     font-feature-settings: 'liga';
   }
 nav{
-    background-color: black;
-    color: white;
+    background-color: var(--backgroundColorMenu);
+    color: var(--colorMenu);
     width: 100%;
 }
 nav .mobile{  
@@ -43,8 +49,8 @@ nav .mobile .header{
 }
 nav .mobile .header button{  
    border: none;
-   background-color: black;
-   color: white;
+   background-color: var(--backgroundColorMenu);
+   color: var(--colorMenu);
    padding: 15px;
    cursor: pointer;
 }
@@ -55,14 +61,14 @@ nav .logo{
     min-width: 250px;
 }
 nav a{
-    color: white;
+    color: var(--colorMenu);
     text-decoration: none;
     display: block;
     padding: 20px 25px;
 }
 nav a:hover{
-    color: black;
-    background-color: rgb(251, 125, 0);  
+    color: var(--colorMenuHover);
+    background-color: var(--backgroundColorMenuHover);  
 }
 nav .desktop{
     display: flex;
@@ -88,7 +94,7 @@ nav .desktop .secondary.mini{
       display: block;
   }
   nav .desktop .secondary.mini .submenu{
-      background-color: black;
+      background-color: var(--backgroundColorMenu);
        position: absolute;
        display: none; 
        width: 200px;
