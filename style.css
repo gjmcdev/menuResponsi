@@ -37,3 +37,24 @@ nav .desktop .secondary{
 nav .desktop .secondary.mini{
     display: none;
 }
+@media screen and (max-width: 895px){
+  nav .desktop .logo{
+      min-width: 100px;
+  }  
+  nav .secondary.full{
+      display: none;
+  }
+  nav .desktop .secondary.mini{
+      display: block;
+  }
+  nav .desktop .secondary.mini .submenu{
+      background-color: black;
+       position: absolute;
+       display: none; 
+       width: 200px;
+       right: 0;
+    }
+  nav .desktop .secondary.mini:hover .submenu{
+   display: block;
+}
+}
