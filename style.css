@@ -3,6 +3,30 @@ body{
     padding: 0;
     margin: 0;
 }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 nav{
     background-color: black;
     color: white;
@@ -10,6 +34,18 @@ nav{
 }
 nav .mobile{  
       display: none;
+}
+nav .mobile .header{  
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+nav .mobile .header button{  
+   border: none;
+   background-color: black;
+   color: white;
+   padding: 15px;
+   cursor: pointer;
 }
 nav .logo{
     min-width: 250px;
@@ -57,4 +93,14 @@ nav .desktop .secondary.mini{
   nav .desktop .secondary.mini:hover .submenu{
    display: block;
 }
+}
+@media screen and (max-width: 500px) {
+    nav .desktop{
+        display: none;
+    }
+    nav .mobile{
+        display: block;
+    }
+
+    
 }
