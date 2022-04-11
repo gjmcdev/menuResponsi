@@ -33,6 +33,16 @@ body{
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+ul{
+    padding: 0;
+    margin: 0;
+}  
+ul li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
 nav{
     background-color: var(--backgroundColorMenu);
     color: var(--colorMenu);
@@ -54,6 +64,11 @@ nav .mobile .header button{
    padding: 15px;
    cursor: pointer;
 }
+nav .mobile .header button:hover{  
+    color: var(--colorMenuHover);
+    background-color: var(--backgroundColorMenuHover);  
+   
+ }
 nav .mobile .collapsed{  
     display: none;
 }
