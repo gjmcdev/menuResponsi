@@ -6,7 +6,7 @@ body{
 :root{
     --backgroundColorMenu: black;
     --colorMenu:white;
-    --backgroundColorMenuHover: rgb(246, 2, 2);
+    --backgroundColorMenuHover: rgb(157, 242, 11);
     --colorMenuHover:rgb(0, 0, 0);
 }
 .material-icons {
